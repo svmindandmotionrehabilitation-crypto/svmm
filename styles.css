@@ -125,3 +125,24 @@ img{max-width:100%}
 .resource-link-grid span{font-size:13px;color:var(--muted);line-height:1.65}
 .source-note{font-size:12px!important;line-height:1.8}
 @media(max-width:720px){.answer-summary{font-size:13px!important}.faq-item{padding:18px}.faq-item h3{font-size:16px}.resource-link-grid{grid-template-columns:minmax(0,1fr)}.resource-links h3{font-size:23px}}
+
+
+/* AEO/GEO: answer-first summaries, service decision guide and transparent example */
+.answer-summary{max-width:680px;margin:18px 0;padding:18px 20px;border-left:4px solid var(--teal);background:#fff;border-radius:0 14px 14px 0;box-shadow:0 8px 24px rgba(32,43,88,.06);font-size:14px;line-height:1.75}
+.answer-summary p{margin:0 0 10px}
+.answer-summary ul{margin:8px 0 0;padding-left:20px}
+.answer-summary li{margin:7px 0}
+.answer-summary a{color:var(--navy);text-decoration:underline;text-underline-offset:3px}
+.decision-section{background:var(--mist)}
+.decision-table-wrap{max-width:1000px;margin:0 auto;overflow-x:auto;border:1px solid #dfe7eb;border-radius:16px;background:#fff}
+.decision-table{width:100%;border-collapse:collapse;text-align:left;min-width:680px}
+.decision-table th,.decision-table td{padding:16px 18px;border-bottom:1px solid #e6ecef;vertical-align:top;font-size:13px;line-height:1.65}
+.decision-table th{background:#202b58;color:#fff;font-weight:700}
+.decision-table td:first-child{font-weight:700;color:var(--navy);width:30%}
+.decision-table td:nth-child(2){width:30%}
+.decision-table tr:last-child td{border-bottom:0}
+.example-card{max-width:1000px;margin:24px auto 0;padding:24px;background:#fff;border:1px solid #dfe7eb;border-radius:16px}
+.example-card h3{margin:8px 0 14px;color:var(--navy);font-size:21px}
+.example-card p{font-size:14px;line-height:1.75;color:var(--muted);margin:8px 0}
+.example-card .eyebrow{font-size:11px}
+@media(max-width:720px){.answer-summary{padding:15px;font-size:13px}.decision-table th,.decision-table td{padding:13px;font-size:12px}.example-card{padding:18px}.example-card h3{font-size:18px}}

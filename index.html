@@ -177,6 +177,15 @@
 const menuBtn=document.querySelector('.menu-btn'), nav=document.querySelector('.nav');
 menuBtn.addEventListener('click',()=>{const isOpen=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(isOpen));menuBtn.setAttribute('aria-label',isOpen?'Close menu':'Open menu');});
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.setAttribute('aria-label','Open menu');}));
+// Keep section navigation smooth without showing #home, #about, etc. in the address bar.
+document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener('click',e=>{
+  const target=document.getElementById(link.getAttribute('href').slice(1));
+  if(!target)return;
+  e.preventDefault();
+  target.scrollIntoView({behavior:'smooth',block:'start'});
+  history.replaceState(null,'',window.location.pathname+window.location.search);
+}));
+if(window.location.hash)history.replaceState(null,'',window.location.pathname+window.location.search);
 function submitForm(e){e.preventDefault(); const f=new FormData(e.target); const msg=`Hello SVMM Rehab Centre, I would like to request an appointment.%0A%0AName: ${encodeURIComponent(f.get('name'))}%0APhone: ${encodeURIComponent(f.get('phone'))}%0AService: ${encodeURIComponent(f.get('service'))}%0AMessage: ${encodeURIComponent(f.get('message')||'')}`; window.open('https://wa.me/919398237781?text='+msg,'_blank'); return false;}
 </script>
 </body>

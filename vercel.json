@@ -1,4 +1,17 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "svmmrehabcentre.com"
+        }
+      ],
+      "destination": "https://www.svmmrehabcentre.com/:path*",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/sitemap.xml",

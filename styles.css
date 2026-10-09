@@ -224,3 +224,9 @@ footer .footer-grid > div:first-child img[alt*="logo"] {
     width: min(190px, 100%);
   }
 }
+
+
+/* Keep the existing SVMM wordmark visible in the top-left header position. */
+.header .brand{display:flex;align-items:center;flex:0 0 auto;min-width:0}
+.header .brand img{display:block;width:min(280px,38vw);height:auto;max-height:68px;object-fit:contain}
+@media(max-width:720px){.header .brand img{width:min(210px,58vw);max-height:58px}}

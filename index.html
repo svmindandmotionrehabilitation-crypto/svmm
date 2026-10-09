@@ -27,7 +27,7 @@
       <a class="brand" href="#home" aria-label="SV Mind and Motion home">
         <img src="svmm-logo-wordmark.png" alt="SV Mind & Motion Rehabilitation Centre logo" />
       </a>
-      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
       <nav class="nav">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -59,7 +59,7 @@
         <div class="hero-visual">
           <div class="orb orb-a"></div><div class="orb orb-b"></div>
           <div class="logo-card">
-            <img src="assets/svmm-logo-mark.jpg" alt="SV Mind and Motion emblem" />
+            <img src="svmm-logo-wordmark.png" alt="SV Mind and Motion emblem" />
             <div class="logo-caption"><b>Restoring Mind.</b><b>Renewing Motion.</b></div>
           </div>
           <div class="floating-card fc-one"><span>✦</span><div><b>Holistic care</b><small>Mind + movement + development</small></div></div>
@@ -80,7 +80,7 @@
     <section class="section about" id="about">
       <div class="container split">
         <div class="section-image">
-          <div class="image-frame"><img src="assets/svmm-logo-mark.jpg" alt="SV Mind & Motion Rehabilitation Centre" /></div>
+          <div class="image-frame"><img src="svmm-logo-wordmark.png" alt="SV Mind & Motion Rehabilitation Centre" /></div>
           <div class="mini-badge"><span>SVMM</span><small>Restoring Mind. Renewing Motion.</small></div>
         </div>
         <div class="section-copy">
@@ -130,7 +130,8 @@
 
 <section class="quote-section">
   <div class="container quote-card">
-    <div>
+    <div class="quote-mark" aria-hidden="true">“</div>
+    <div class="quote-copy">
       <h2>Small steps. Meaningful progress. <span>Every day.</span></h2>
       <p>At SVMM, every achievement matters — from the first movement to a new word, a new skill or a new level of independence.</p>
     </div>
@@ -165,7 +166,7 @@
 
   <footer>
     <div class="container footer-grid">
-      <div><img src="assets/svmm-logo-wordmark.jpg" alt="SVMM logo" /><p>Physiotherapy & Child Development Services</p></div>
+      <div><img src="svmm-logo-wordmark.png" alt="SVMM logo" /><p>Physiotherapy & Child Development Services</p></div>
       <div><h4>Quick Links</h4><a href="#about">About</a><a href="#services">Services</a><a href="#why-us">Why Us</a><a href="#contact">Contact</a></div>
       <div><h4>Contact</h4><a href="tel:9398237781">93982 37781</a><a href="tel:8340023505">83400 23505</a><a href="mailto:info@svmmrehabcentre.com">info@svmmrehabcentre.com</a></div>
     </div>
@@ -174,8 +175,8 @@
 
 <script>
 const menuBtn=document.querySelector('.menu-btn'), nav=document.querySelector('.nav');
-menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+menuBtn.addEventListener('click',()=>{const isOpen=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(isOpen));menuBtn.setAttribute('aria-label',isOpen?'Close menu':'Open menu');});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.setAttribute('aria-label','Open menu');}));
 function submitForm(e){e.preventDefault(); const f=new FormData(e.target); const msg=`Hello SVMM Rehab Centre, I would like to request an appointment.%0A%0AName: ${encodeURIComponent(f.get('name'))}%0APhone: ${encodeURIComponent(f.get('phone'))}%0AService: ${encodeURIComponent(f.get('service'))}%0AMessage: ${encodeURIComponent(f.get('message')||'')}`; window.open('https://wa.me/919398237781?text='+msg,'_blank'); return false;}
 </script>
 </body>

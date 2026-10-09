@@ -103,3 +103,25 @@ img{max-width:100%}
   .stats-grid div{padding:15px 8px}
   .quote-card{padding:26px 18px}
 }
+
+
+/* SEO, answer-first content and resource guide styling */
+.answer-summary{max-width:610px;padding:14px 17px;border-left:3px solid var(--teal);background:rgba(255,255,255,.75);border-radius:0 12px 12px 0;font-size:14px!important;line-height:1.75}
+.clinical-lead{font-size:13px!important}
+.updated-date{font-size:12px!important;color:var(--muted)}
+.faq-section{background:var(--mist)}
+.faq-list{max-width:900px;margin:0 auto;display:grid;gap:14px}
+.faq-item{padding:22px 24px;border:1px solid #e2e9ec;background:#fff;border-radius:18px}
+.faq-item h3{margin:0 0 8px;color:var(--navy);font-size:18px;line-height:1.4}
+.faq-item p{margin:0;color:var(--muted);font-size:14px;line-height:1.8}
+.faq-item a,.source-note a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--teal2);text-underline-offset:3px}
+.resource-links{max-width:900px;margin:44px auto 0}
+.resource-links h3{font:800 26px 'Manrope';color:var(--navy);margin:0 0 8px}
+.resource-links>p{color:var(--muted);font-size:14px}
+.resource-link-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0}
+.resource-link-grid>a{display:flex;flex-direction:column;gap:8px;background:#fff;border:1px solid #e2e9ec;border-radius:18px;padding:22px;transition:transform .2s,box-shadow .2s}
+.resource-link-grid>a:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(32,43,88,.08)}
+.resource-link-grid strong{color:var(--navy);line-height:1.45}
+.resource-link-grid span{font-size:13px;color:var(--muted);line-height:1.65}
+.source-note{font-size:12px!important;line-height:1.8}
+@media(max-width:720px){.answer-summary{font-size:13px!important}.faq-item{padding:18px}.faq-item h3{font-size:16px}.resource-link-grid{grid-template-columns:minmax(0,1fr)}.resource-links h3{font-size:23px}}

@@ -197,3 +197,6 @@ img{max-width:100%}
  .logo-card{height:255px}
  .logo-card img{height:195px}
 }
+
+/* Ensure no legacy footer logo is displayed */
+footer .footer-grid img { display: none !important; }

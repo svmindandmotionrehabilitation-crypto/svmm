@@ -258,5 +258,5 @@ footer .footer-grid > div:first-child img[alt*="logo"] {
 
 
 /* Set explicit width and height for the footer logo */
-footer .footer-grid > div:first-child img[alt*="logo"]{width:300px;height:100px;max-width:100%;object-fit:contain}
+footer .footer-grid > div:first-child img[alt*="logo"]{width:300px;height:100px;max-width:100%}
 @media(max-width:720px){footer .footer-grid > div:first-child img[alt*="logo"]{width:230px;height:78px}}

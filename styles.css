@@ -482,3 +482,21 @@ footer .footer-grid .footer-phone-list a.footer-phone:focus {
   font-variant-numeric: lining-nums tabular-nums !important;
   white-space: nowrap !important;
 }
+
+
+/* Site-wide consistency: every clickable phone number uses the same typography on mobile and desktop. */
+a[href^="tel:"],
+a[href^="tel:"]:link,
+a[href^="tel:"]:visited,
+a[href^="tel:"]:hover,
+a[href^="tel:"]:focus,
+a[href^="tel:"] b,
+a[href^="tel:"] strong,
+a[href^="tel:"] span {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  font-variant-numeric: lining-nums tabular-nums !important;
+}

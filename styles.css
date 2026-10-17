@@ -353,3 +353,83 @@ footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"]:hov
 footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"]:focus {
   font-size: 18px !important;
 }
+
+/* Responsive phone-number layout across the site (top bar, content, contact cards and footer). */
+a[href^="tel:"] {
+  max-width: 100%;
+  font-variant-numeric: lining-nums tabular-nums;
+  overflow-wrap: anywhere;
+}
+.top-links .footer-phone-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 14px;
+  min-width: 0;
+}
+.top-links a.footer-phone {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.contact-items > a,
+.contact-items > div {
+  min-width: 0;
+}
+.contact-items > a > div,
+.contact-items > div > div {
+  min-width: 0;
+}
+.contact-items b {
+  overflow-wrap: anywhere;
+}
+.faq-item a[href^="tel:"] {
+  display: inline-block;
+  font-size: 1em;
+  white-space: nowrap;
+}
+@media (max-width: 720px) {
+  .topbar-inner {
+    width: calc(100% - 24px);
+    min-height: 0;
+    padding: 8px 0;
+  }
+  .top-links {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+  }
+  .top-links .footer-phone-list {
+    justify-content: center;
+    gap: 4px 12px;
+  }
+  .top-links a.footer-phone {
+    font-size: 12px;
+  }
+  .contact-items > a,
+  .contact-items > div {
+    gap: 10px;
+  }
+  .contact-items b {
+    font-size: 14px;
+  }
+  footer .footer-grid .footer-phone-list a.footer-phone,
+  footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"] {
+    font-size: 14px !important;
+    white-space: nowrap !important;
+  }
+}
+@media (max-width: 360px) {
+  .top-links {
+    gap: 5px 8px;
+  }
+  .top-links a.footer-phone {
+    font-size: 11px;
+  }
+  .contact-items b {
+    font-size: 13px;
+  }
+}

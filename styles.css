@@ -296,3 +296,22 @@ footer .footer-grid a.footer-phone:visited {
   text-transform: none !important;
   white-space: nowrap;
 }
+
+
+/* Final, shared typography for every phone number displayed in any page footer. */
+footer .footer-grid a.footer-phone,
+footer .footer-grid a.footer-phone:link,
+footer .footer-grid a.footer-phone:visited,
+footer .footer-grid a.footer-phone:hover,
+footer .footer-grid a.footer-phone:focus {
+  display: block !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  font-variant-numeric: lining-nums tabular-nums !important;
+  text-transform: none !important;
+  white-space: nowrap !important;
+}

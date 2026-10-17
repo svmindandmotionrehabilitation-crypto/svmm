@@ -461,3 +461,24 @@ footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"]:foc
   letter-spacing: 0 !important;
   font-variant-numeric: lining-nums tabular-nums !important;
 }
+
+
+/* Final fix: both footer phone numbers must remain the same size on mobile and desktop. */
+footer .footer-grid .footer-phone-list a.footer-phone,
+footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"],
+footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"]:link,
+footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"]:visited,
+footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"]:hover,
+footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"]:focus,
+footer .footer-grid .footer-phone-list a.footer-phone:link,
+footer .footer-grid .footer-phone-list a.footer-phone:visited,
+footer .footer-grid .footer-phone-list a.footer-phone:hover,
+footer .footer-grid .footer-phone-list a.footer-phone:focus {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  font-variant-numeric: lining-nums tabular-nums !important;
+  white-space: nowrap !important;
+}

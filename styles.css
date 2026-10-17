@@ -516,3 +516,20 @@ a[href^="tel:8340023505"] span {
   font-family: 'Poppins', sans-serif !important;
   font-size: 14px !important;
 }
+
+
+/* Footer-only correction: force both contact numbers to identical typography. */
+footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"],
+footer .footer-grid .footer-phone-list a.footer-phone[href="tel:8340023505"],
+footer .footer-grid a.footer-phone[href="tel:9398237781"],
+footer .footer-grid a.footer-phone[href="tel:8340023505"] {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  font-variant-numeric: lining-nums tabular-nums !important;
+  text-transform: none !important;
+  white-space: nowrap !important;
+}

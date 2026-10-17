@@ -281,3 +281,18 @@ footer .footer-grid a[href^="tel:"] {
   font-weight: 400;
   white-space: nowrap;
 }
+
+
+/* Explicitly normalize both footer phone links; override any inherited link styles. */
+footer .footer-grid a.footer-phone,
+footer .footer-grid a.footer-phone:link,
+footer .footer-grid a.footer-phone:visited {
+  display: block !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  white-space: nowrap;
+}

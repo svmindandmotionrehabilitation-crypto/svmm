@@ -533,3 +533,38 @@ footer .footer-grid a.footer-phone[href="tel:8340023505"] {
   text-transform: none !important;
   white-space: nowrap !important;
 }
+
+
+/* Readability pass: improve body copy, links, labels and footer contrast/size. */
+body {
+  font-family: 'DM Sans', 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body p, .section p, .card p, .service-card p, .about p, .contact p {
+  line-height: 1.75;
+}
+footer, footer p, footer a, footer li, footer small {
+  font-size: 15px;
+  line-height: 1.7;
+}
+footer .footer-grid .footer-phone-list a.footer-phone,
+footer .footer-grid a.footer-phone[href="tel:9398237781"],
+footer .footer-grid a.footer-phone[href="tel:8340023505"] {
+  font-family: 'Poppins', 'DM Sans', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 1.7 !important;
+  letter-spacing: 0 !important;
+}
+@media (max-width: 720px) {
+  body { font-size: 16px; line-height: 1.7; }
+  footer, footer p, footer a, footer li, footer small { font-size: 15px; }
+  footer .footer-grid .footer-phone-list a.footer-phone,
+  footer .footer-grid a.footer-phone[href="tel:9398237781"],
+  footer .footer-grid a.footer-phone[href="tel:8340023505"] {
+    font-size: 16px !important;
+  }
+}

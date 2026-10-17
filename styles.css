@@ -433,3 +433,31 @@ a[href^="tel:"] {
     font-size: 13px;
   }
 }
+
+/* Final override: keep displayed phone numbers the same size across all site sections. */
+.top-links a.footer-phone,
+.top-links a.footer-phone:link,
+.top-links a.footer-phone:visited,
+.faq-item a.footer-phone,
+.contact-items > a[href^="tel:"] b,
+footer .footer-grid a.footer-phone,
+footer .footer-grid a.footer-phone:link,
+footer .footer-grid a.footer-phone:visited,
+footer .footer-grid a.footer-phone:hover,
+footer .footer-grid a.footer-phone:focus,
+footer .footer-grid .footer-phone-list a.footer-phone,
+footer .footer-grid .footer-phone-list a.footer-phone:link,
+footer .footer-grid .footer-phone-list a.footer-phone:visited,
+footer .footer-grid .footer-phone-list a.footer-phone:hover,
+footer .footer-grid .footer-phone-list a.footer-phone:focus,
+footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"],
+footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"]:link,
+footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"]:visited,
+footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"]:hover,
+footer .footer-grid .footer-phone-list a.footer-phone[href="tel:9398237781"]:focus {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  font-variant-numeric: lining-nums tabular-nums !important;
+}

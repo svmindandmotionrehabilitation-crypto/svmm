@@ -315,3 +315,31 @@ footer .footer-grid a.footer-phone:focus {
   text-transform: none !important;
   white-space: nowrap !important;
 }
+
+
+/* Footer contact numbers: clean, shared wrapper and matching typography. */
+footer .footer-phone-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  margin: 0 0 4px;
+}
+footer .footer-grid .footer-phone-list a.footer-phone,
+footer .footer-grid .footer-phone-list a.footer-phone:link,
+footer .footer-grid .footer-phone-list a.footer-phone:visited,
+footer .footer-grid .footer-phone-list a.footer-phone:hover,
+footer .footer-grid .footer-phone-list a.footer-phone:focus {
+  display: block !important;
+  margin: 7px 0 !important;
+  padding: 0 !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  font-variant-numeric: lining-nums tabular-nums !important;
+  text-transform: none !important;
+  white-space: nowrap !important;
+}

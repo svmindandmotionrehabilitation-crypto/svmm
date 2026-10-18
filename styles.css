@@ -672,3 +672,66 @@ footer .copyright {
     line-height: 1.7;
   }
 }
+
+
+/* Footer typography: clear, consistent and comfortably readable on every screen. */
+footer .footer-grid p,
+footer .footer-grid a,
+footer .footer-grid li,
+footer .footer-grid small,
+footer .footer-grid .footer-phone-list a,
+footer .footer-grid .footer-social a {
+  font-size: 16px !important;
+  line-height: 1.75 !important;
+}
+footer .footer-grid h4 {
+  font-size: 18px !important;
+  line-height: 1.4 !important;
+  margin-bottom: 14px;
+}
+footer .footer-grid p {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+footer .footer-grid a {
+  display: block;
+  margin: 9px 0;
+  overflow-wrap: anywhere;
+}
+footer .footer-grid img {
+  max-width: 100%;
+}
+footer .copyright {
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
+footer .footer-grid .footer-phone-list a.footer-phone,
+footer .footer-grid a.footer-phone[href="tel:9398237781"],
+footer .footer-grid a.footer-phone[href="tel:8340023505"] {
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  font-weight: 600 !important;
+}
+@media (max-width: 720px) {
+  footer .footer-grid p,
+  footer .footer-grid a,
+  footer .footer-grid li,
+  footer .footer-grid small,
+  footer .footer-grid .footer-phone-list a,
+  footer .footer-grid .footer-social a {
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+  }
+  footer .footer-grid h4 {
+    font-size: 17px !important;
+    line-height: 1.45 !important;
+  }
+  footer .footer-grid .footer-phone-list a.footer-phone,
+  footer .footer-grid a.footer-phone[href="tel:9398237781"],
+  footer .footer-grid a.footer-phone[href="tel:8340023505"] {
+    font-size: 15px !important;
+  }
+  footer .copyright {
+    font-size: 13px !important;
+  }
+}

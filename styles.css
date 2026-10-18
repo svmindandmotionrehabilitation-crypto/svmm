@@ -568,3 +568,107 @@ footer .footer-grid a.footer-phone[href="tel:8340023505"] {
     font-size: 16px !important;
   }
 }
+
+
+/* Accessibility/readability pass — consistent typography across all pages. */
+:root {
+  font-size: 16px;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: 'DM Sans', 'Poppins', sans-serif;
+}
+p, li, dd, dt {
+  font-size: 16px;
+  line-height: 1.75;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+.hero h1, .hero-copy h1 {
+  line-height: 1.12;
+}
+.eyebrow {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.nav, .nav a, .nav-cta, .btn {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.service-card h3, .why-list h3, .faq-item h3 {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.service-card p, .why-list p, .faq-item p,
+.section-copy p, .section-heading p, .doctor-copy > p:not(.doctor-role) {
+  font-size: 16px;
+  line-height: 1.75;
+}
+.answer-summary, .resource-links > p, .resource-link-grid span,
+.example-card p, .source-note, .updated-date {
+  font-size: 15px;
+  line-height: 1.75;
+}
+.decision-table th, .decision-table td {
+  font-size: 15px;
+  line-height: 1.65;
+}
+.contact-form label {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.contact-form input, .contact-form select, .contact-form textarea {
+  font-size: 16px;
+  line-height: 1.5;
+}
+footer, footer p, footer a, footer li, footer small {
+  font-size: 15px;
+  line-height: 1.7;
+}
+footer .copyright {
+  font-size: 13px;
+  line-height: 1.6;
+}
+@media (max-width: 720px) {
+  body { font-size: 16px; line-height: 1.7; }
+  p, li, dd, dt { font-size: 16px; line-height: 1.75; }
+  .hero p, .hero-copy > p { font-size: 16px; line-height: 1.75; }
+  .hero h1, .hero-copy h1 {
+    font-size: clamp(32px, 8.5vw, 42px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+  }
+  .section-copy h2, .section-heading h2, .why h2, .contact h2 {
+    font-size: clamp(28px, 7.5vw, 36px);
+    line-height: 1.2;
+    letter-spacing: -.6px;
+  }
+  .service-card h3, .why-list h3, .faq-item h3 {
+    font-size: 17px;
+    line-height: 1.45;
+  }
+  .service-card p, .why-list p, .faq-item p,
+  .section-copy p, .section-heading p, .doctor-copy > p:not(.doctor-role) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  .answer-summary, .resource-links > p, .resource-link-grid span,
+  .example-card p, .source-note, .updated-date {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+  .decision-table th, .decision-table td {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .topbar, .topbar .top-links { font-size: 12px; }
+  footer, footer p, footer a, footer li, footer small {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
